@@ -1,3 +1,7 @@
+function esconder(){
+   document.querySelector(".instrucoes").classList.add("escondido");
+};
+
 //Carrega página
 let listaFilmes = [["https://images-na.ssl-images-amazon.com/images/I/519NGMZN2PL.__AC_SX300_SY300_QL70_ML2_.jpg","O Fabuloso Destino de Amélie Poulain", "Jean Pierre-Jeunet"], ["https://m.media-amazon.com/images/I/51rZLBQujoL._AC_SY445_.jpg", "Bem-me-quer, mal-me-quer", "Laetitia Colombani"], ["https://images-na.ssl-images-amazon.com/images/I/91ZbQIZn1LL._RI_.jpg", "A Despedida", "Lulu Wang"],["https://static.wikia.nocookie.net/althistory/images/c/cf/Do_the_Right_Thing.jpg", "Faça a coisa certa", "Spike Lee"], ["https://m.media-amazon.com/images/M/MV5BMjM2NTVkYjctYTMxZi00OTVlLWEyNzMtODg4MDRkNjBhYjZhXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_FMjpg_UX1000_.jpg", "Coraline", "Henry Selick"] ];
 

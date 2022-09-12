@@ -50,7 +50,7 @@ header{
   padding: 2vw 3vw;
   background-color: rgba(256, 60, 80, 0.2);
   border-radius: 10px;
-  margin: 3vw auto 2vw;
+  margin: 3vw auto 0;
   position: relative;
 }
 
@@ -58,6 +58,15 @@ header{
   color: #ffffff;
   margin: 0;
   text-align: center;
+}
+
+.instrucoes{
+   background-color: rgba(180, 120, 120, 0.4);
+   border-radius: 10px;
+   width: 85vw;
+   margin: 2vw auto 0;
+   padding: 2vw 4vw;
+   position: relative;
 }
 
 form{
@@ -113,7 +122,8 @@ label{
 }
 
 .mensagemErro,
-.mensagemErroDois{
+.mensagemErroDois,
+.instrucoes p{
    font-size: 1.2rem;
    font-weight: bold;
    color: #CCBB22;
@@ -292,7 +302,8 @@ footer a p:hover{
 
 @media (max-width: 850px){
    .mensagemErro,
-   .mensagemErroDois{
+   .mensagemErroDois,
+   .instrucoes p{
       font-size: 0.8rem;
    }
 
