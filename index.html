@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CaioFlix</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <header>
+   <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+   </a>
+   <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+   </header>
+   <div class="container">
+      <h1 class="page-title">
+         Caioflix
+      </h1>
+   </div>
+   <form>
+      <fieldset id="form-tipo-lista">
+         <legend id="form-seleciona">Escolha qual lista quer editar</legend>
+         <div class="formContainer">            
+            <div class="formCelula formInicial">
+               <label for="tipo-lista">Quero editar:</label>         
+               <select id="tipo-lista">
+                  <option value="filme">Filmes</option>
+                  <option value="serie">Séries</option>
+                  <option value="album">Álbuns</option>
+               </select>
+            </div>
+            <div class="botoes">
+               <button id="confirmarLista">Confirma</button>
+            </div>
+         </div>
+      </fieldset>  
+      <fieldset class="escondido" id="form-adiciona-lista">
+         <legend id="form-adiciona"></legend>         
+         <div class="formContainer">
+            <div class="formCelula">
+               <label for="nomeFilme" id="labelNomeFilme"></label>         
+               <input type="text" id="nomeFilme">
+            </div>
+            <div class="formCelula">
+               <label for="diretorFilme" id="labelDiretorFilme"></label>         
+               <input type="text" id="diretorFilme">
+            </div>
+            <div class="formCelula">
+               <label for="posterFilme" id="labelPosterFilme"></label>         
+               <input type="text" id="posterFilme" placeholder="Adicione uma url com final jpg ou png">
+            </div>
+            <div>
+               <p class="mensagemErro escondido"></p>
+            </div>
+            <div class="botoes">
+               <button id="adicionarFilme"></button>
+            </div>
+         </div>
+      </fieldset>
+      <fieldset class="escondido" id="form-exclui-lista">
+         <legend id="form-exclui"></legend>
+         <div class="formContainer">
+            <div>
+               <p class="mensagemErroDois escondido"></p>
+            </div>
+            <div class="botoes">
+               <button id="excluirFilme"></button>
+               <button id="confirmarFilme" class="escondido">Confirma?</button>
+            </div>
+         </div>
+      </fieldset>      
+   </form>
+   <section class="lista-de-filme">
+      <h4>Lista de Filmes</h4>
+      <div class="linha"></div>
+      <div class="filme-container"></div>
+   </section>
+   <section class="lista-de-serie">
+      <h4>Lista de Séries</h4>      
+      <div class="linha"></div>
+      <div class="serie-container"></div>
+   </section>   
+   <section class="lista-de-album">
+      <h4>Lista de CD's</h4>      
+      <div class="linha"></div>
+      <div class="album-container"></div>
+   </section>   
+   
+
+   <footer>
+   <p>Caio Cabral</p>
+   <p>Front-End Developer</p>
+   <a href="https://www.linkedin.com/in/caio-marcellus-cabral/" target="_blank"><p>Linkedin</p></a>
+   </footer>
+   
+
+   <script src="script.js"></script>
+</body>
+</html>
