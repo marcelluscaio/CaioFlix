@@ -205,10 +205,9 @@ section h4{
 .filme-celula{
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
    width: 29vw;
-   aspect-ratio: 2/3;
+   height: 43vw;
    background-color: rgba(256, 90, 115, 0.2);
    border-radius: 10px;
    transition: 1s;
@@ -220,11 +219,13 @@ section h4{
    aspect-ratio: 3/4;
 }
 
-.album-container .filme-imagem,
-.album-container .filme-celula
-{
-   aspect-ratio: 3/4;
-}
+ .album-container .filme-celula{
+   height: 34vw;
+ }
+
+ .album-container .filme-imagem{
+   aspect-ratio:1;
+ }
 
 .filme-nome{
    color: #fff;
@@ -233,13 +234,15 @@ section h4{
    font-weight: bold;
    margin: 0 15px;
    overflow-y: hidden;
+   height: calc((8vw)*3/5);
 }
 
 .filme-diretor{
    color: #fff;
    font-size: 1.1rem;
-   margin: 5px 0 10px;
+   margin: 0 0 10px;
    overflow-y: hidden;
+   height: calc((8vw)*2/5);
 }
 
 .checkbox{
@@ -319,22 +322,27 @@ footer a p:hover{
    }
 
    .filme-celula{
-      width: 80vw;
+      width: 65vw;
+      height: calc((65vw)*4/3);
       overflow-y: hidden;
    }
 
    .filme-imagem{ 
-      width: 75vw; 
+      width: 60vw; 
       overflow-y: hidden;  
    }   
+
+   .album-container .filme-celula{
+      height: 69vw;
+   }
 
    .linha{
       width: 80vw;
    }
 
    .filme-nome{
-      font-size: 1rem;
-      line-height: 1.1rem;
+      font-size: 0.8rem;
+      line-height: 1rem;
    }
 
    .filme-diretor{
@@ -357,6 +365,26 @@ footer a p:hover{
       flex-direction: column;
       justify-content: center;
    }
+
+   .filme-nome,
+   .filme-diretor{
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+   }
+
+   .album-container .filme-celula{
+      height: 80vw;
+   }
+
+   .filme-nome{
+      height: calc((20vw)*3/5);
+   }
+
+   .filme-diretor{
+      height: calc((11vw)*3/5);
+   }
+
+
 
    footer p{
       font-size: 0.8rem; 
